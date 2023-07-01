@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <title>Übergabe</title>
 </head>
@@ -11,8 +14,8 @@
 <body>
   <form action="https://formspree.io/f/moqoayyk" method="POST">
     <div class="infoDaten">
-      <h1>Inwentaryzacja z dnia: <span class="inventDay"></span></h1>
-      <label class="person" for="worker">Kto robi inwentaryzację?</label>
+      <h1>Inventar vom: <span class="inventDay"></span></h1>
+      <label class="person" for="worker">Wer führt die Inventur durch?</label>
       <select name="worker" id="user">
         <option>Natan</option>
         <option>Michał W</option>
@@ -32,7 +35,7 @@
         <option>Przemek</option>
         <option>Yuriy</option>
       </select><br>
-      <label class="car" for="user">Który samochód?</label>
+      <label class="car" for="user">Welches Auto?</label>
       <select name="car" id="">
         <option>1APF4567</option>
         <option>2APF4567</option>
@@ -42,26 +45,62 @@
       </select>
     </div>
     <div class="listItems">
-      <input class="search" type="text" placeholder="Wyszukaj">
-      <p class="tel">Masz pytanie do Piotra? <a href="tel:4353949809">Zadzwoń</a></p>
+      <input class="search" type="text" placeholder="Suchen">
+      <p class="tel">Hast du eine Frage an Piotr? <a href="tel:4353949809">Ruf direkt an</a></p>
+      <br>
+      <fieldset>
+        <legend>Dosensenken/Schlitzen</legend>
+        <ol>
+          <li>Dosensenker</li><select name="Dosensenker" id="dosen">
+            <option value="Silber">Silber</option>
+            <option value="Rot">Rot</option>
+            <option value="Staubabsaugung">Staubabsaugung</option>
+            <option value="Nassdosensenker">Nassdosensenker</option>
+          </select><input class="mar width" type="number" placeholder="St">
+          <input class="addList" type="checkbox" name="st" value="st">
+          <li>Verlängerung für Bohrkrohnen <input class="mar width" type="number" placeholder="St"></li>
+          <li>Adapter Hilti <input class="mar" type="checkbox"></li>
+          <li>Adapter Eibenstock <input class="mar" type="checkbox"></li>
+          <li>Schlitzscheiben <input class="mar width" type="number" placeholder="St"></li>
+        </ol>
+      </fieldset>
+      <br>
       <ol>
-        <li>Klucz</li><input class="mar" type="checkbox" name="Klucz" value="28"> 28 <input class="mar" type="checkbox" name="Klucz" value="32">
-        32
-        <input class="mar" type="checkbox" name="Klucz" value="36"> 36 <input class="mar" type="checkbox" name="Klucz" value="41"> 41 <input
-          class="mar" type="text" name="Inny_Klucz" placeholder="Inny">
-        <li>Handschuhe</li><input class="mar" type="checkbox" name="Handschuhe" value="S"> S <input class="mar" type="checkbox"
-          name="Handschuhe" value="M"> M <input class="mar" type="checkbox" name="Handschuhe" value="L"> L <input class="mar" type="checkbox"
-          name="Handschuhe" value="XL"> XL
+        <li>Schlüssel</li><input class="mar" type="checkbox" name="Klucz" value="28"> 24 <input class="mar"
+          type="checkbox" name="Klucz" value="32"> 32 <input class="mar" type="checkbox" name="Klucz" value="41"> 41
+        <input class="mar" type="checkbox" name="Klucz" value="Verstellbarer"> Verstellbarer <input class="mar"
+          type="checkbox" name="Klucz" value="Schlitzmaschine"> Schlitzmaschine
+        <li>Handschuhe</li><input class="mar" type="checkbox" name="Handschuhe" value="S"> 7 <input class="mar"
+          type="checkbox" name="Handschuhe" value="M"> 8 <input class="mar" type="checkbox" name="Handschuhe" value="L">
+        9 <input class="width" type="number" name="Ilość" value="number" placeholder="St">
         <li>Kupferringe <input type="checkbox" name="Kupferringe"></li>
-        <li>Wasserkanister <input type="checkbox" name="Wasserkanister"></li>
-        <li>Bohrer (mm)</li><input class="mar" type="checkbox" name="Bohrer" value="10"> 10 <input class="mar" type="checkbox" name="Bohrer"
-          value="12"> 12 <input class="mar" type="checkbox" name="Bohrer" value="14"> 14
+        <li>Wasserkanister <input type="checkbox" name="Wasserkanister"><input class="mar width" type="number"
+            placeholder="St"></li>
+        <li>Bohrer (mm)</li><input class="mar" type="checkbox" name="Bohrer" value="10"> 10 <input class="mar"
+          type="checkbox" name="Bohrer" value="12"> 12 <input class="mar" type="checkbox" name="Bohrer" value="14"> 14
+        <input class="mar" type="checkbox" name="Bohrer" value="16"> 16 <input class="mar" type="checkbox" name="Bohrer"
+          value="18"> 18 <input class="mar" type="checkbox" name="Bohrer" value="20"> 20
+        <li>Aufmaßzettel <input type="checkbox" name="Aufmaßzettel"></li>
+        <li></li>
       </ol>
-      <textarea class="infos" name="infos" cols="10" rows="4" placeholder="Uwagi / Co jeszcze zamówić"></textarea>
+      <textarea class="infos" name="infos" cols="10" rows="4" placeholder="Sonstiges"></textarea>
+      <button class="send" type="submit">Send</button>
     </div>
-    <button class="send" type="submit">Send</button>
+
   </form>
   <script src="main.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+<!-- <select name="Größe" id="gross">
+            <option value="Größe">24</option>
+            <option value="Größe">36</option>
+            <option value="Größe">42</option>
+            <option value="Andere">Verstellbarer</option>
+            <option value="Andere">Schlitzmaschine</option>
+          </select> -->
