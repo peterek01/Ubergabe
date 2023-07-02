@@ -5,11 +5,6 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-/* body {
-	height: 100%;
-	width: 100%;
-} */
-
 h1 {
 	margin: 15px;
 }
@@ -35,18 +30,27 @@ form {
 	margin-top: 15px;
 }
 
-#searchInput {
+input {
+	width: 15px;
+	height: 15px;
+}
+
+/* input.search {
+  width: auto;
+  height: auto;
 	display: block;
 	margin: 40px auto;
 	text-align: center;
 	font-size: 20px;
-}
+} */
 
 .listItems {
 	margin: 4% 2%;
 }
 
 li {
+	min-height: 22px;
+	line-height: 22px;
 	margin: 10px;
 	margin-left: 25px;
 	font-size: 16px;
