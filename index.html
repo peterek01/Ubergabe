@@ -45,24 +45,26 @@
       </select>
     </div>
     <div class="listItems">
-      <input class="search" type="text" placeholder="Suchen">
+      <input id="searchInput" placeholder="Suchen">
       <p class="tel">Hast du eine Frage an Piotr? <a href="tel:4353949809">Ruf direkt an</a></p>
       <br>
       <fieldset>
         <legend>Dosensenken/Schlitzen</legend>
         <ol>
           <li>Dosensenker<br>
-            <input type="checkbox" onclick="this.form.elements['DS_silber'].disabled = !this.checked"> silber
+            <input class="mar" type="checkbox" onclick="this.form.elements['DS_silber'].disabled = !this.checked">
+            silber
             <input class="width" type="number" name="DS_silber" placeholder="St" disabled><br>
 
-            <input type="checkbox" onclick="this.form.elements['DS_rot'].disabled = !this.checked"> rot
+            <input class="mar" type="checkbox" onclick="this.form.elements['DS_rot'].disabled = !this.checked"> rot
             <input class="width" type="number" name="DS_rot" placeholder="St" disabled><br>
 
-            <input type="checkbox" onclick="this.form.elements['DS_Staubabsaugung'].disabled = !this.checked">
+            <input class="mar" type="checkbox"
+              onclick="this.form.elements['DS_Staubabsaugung'].disabled = !this.checked">
             Staubabsaugung
             <input class="width" type="number" name="DS_Staubabsaugung" placeholder="St" disabled><br>
 
-            <input type="checkbox" onclick="this.form.elements['DS_nass'].disabled = !this.checked"> nass
+            <input class="mar" type="checkbox" onclick="this.form.elements['DS_nass'].disabled = !this.checked"> nass
             <input class="width" type="number" name="DS_nass" placeholder="St" disabled>
           </li>
 
@@ -138,12 +140,10 @@
         <legend>Bohrer</legend>
         <ol>
           <li>Bohrer (mm)<br>
-            <input class="mar" type="checkbox" name="Bohrer"
-              onclick="this.form.elements['Bohrer_12'].disabled = !this.checked"> 12
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_12'].disabled = !this.checked"> 12
             <input class="width" type="number" name="Bohrer_12" placeholder="St" disabled>
 
-            <input class="mar" type="checkbox" name="Bohrer"
-              onclick="this.form.elements['Bohrer_14'].disabled = !this.checked"> 14
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_14'].disabled = !this.checked"> 14
             <input class="width" type="number" name="Bohrer_14" placeholder="St" disabled>
 
             <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_16'].disabled = !this.checked"> 16
@@ -174,17 +174,50 @@
         <legend>Bohrkrohnen</legend>
         <ol>
           <li>Durchmesser (mm)<br>
-            <input class="mar" type="checkbox" name="Bohrkrohne" value="40"> 40
-            <input class="mar" type="checkbox" name="Bohrkrohne" value="50"> 50
-            <input class="mar" type="checkbox" name="Bohrkrohne" value="60"> 60
-            <input class="mar" type="checkbox" name="Bohrkrohne" value="80"> 80
-            <input class="mar" type="checkbox" name="Bohrkrohne" value="100"> 100<br>
-            <input class="mar" type="checkbox" name="Bohrkrohne" value="120"> 120
-            <input class="mar" type="checkbox" name="Bohrkrohne" value="150"> 150
-            <input class="mar" type="checkbox" name="Bohrkrohne" value="160"> 160
-            <input class="mar" type="checkbox" name="Bohrkrohne" value="180"> 180<br>
-            <input class="mar" type="checkbox" name="Bohrkrohne" value="200"> 200
-            <input class="mar" type="checkbox" name="Bohrkrohne" value="250"> 250
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrkrohne_40'].disabled = !this.checked">
+            40
+            <input class="width" type="number" name="Bohrkrohne_40" placeholder="St" disabled>
+
+            <input class="mar2" type="checkbox" onclick="this.form.elements['Bohrkrohne_50'].disabled = !this.checked">
+            50
+            <input class="width" type="number" name="Bohrkrohne_50" placeholder="St" disabled>
+
+            <input class="mar2" type="checkbox" onclick="this.form.elements['Bohrkrohne_60'].disabled = !this.checked">
+            60
+            <input class="width" type="number" name="Bohrkrohne_60" placeholder="St" disabled><br>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrkrohne_80'].disabled = !this.checked">
+            80
+            <input class="width" type="number" name="Bohrkrohne_80" placeholder="St" disabled>
+
+            <input class="mar2" type="checkbox" onclick="this.form.elements['Bohrkrohne_100'].disabled = !this.checked">
+            100
+            <input class="width" type="number" name="Bohrkrohne_100" placeholder="St" disabled>
+
+            <input class="mar4" type="checkbox" onclick="this.form.elements['Bohrkrohne_120'].disabled = !this.checked">
+            120
+            <input class="width" type="number" name="Bohrkrohne_120" placeholder="St" disabled><br>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrkrohne_150'].disabled = !this.checked">
+            150
+            <input class="width" type="number" name="Bohrkrohne_150" placeholder="St" disabled>
+
+            <input class="mar3" type="checkbox" onclick="this.form.elements['Bohrkrohne_160'].disabled = !this.checked">
+            160
+            <input class="width" type="number" name="Bohrkrohne_160" placeholder="St" disabled>
+
+            <input class="mar4" type="checkbox" onclick="this.form.elements['Bohrkrohne_180'].disabled = !this.checked">
+            180
+            <input class="width" type="number" name="Bohrkrohne_180" placeholder="St" disabled><br>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrkrohne_200'].disabled = !this.checked">
+            200
+            <input class="width" type="number" name="Bohrkrohne_200" placeholder="St" disabled>
+
+            <input class="mar3" type="checkbox" onclick="this.form.elements['Bohrkrohne_250'].disabled = !this.checked">
+            250
+            <input class="width" type="number" name="Bohrkrohne_250" placeholder="St" disabled>
+
             <input class="mar" type="checkbox"
               onclick="this.form.elements['Andere_Bohrkrone'].disabled = !this.checked">
             Andere <input class="width" type="text" name="Andere_Bohrkrone" placeholder="St" disabled>

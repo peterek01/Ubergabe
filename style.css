@@ -35,7 +35,7 @@ form {
 	margin-top: 15px;
 }
 
-.search {
+#searchInput {
 	display: block;
 	margin: 40px auto;
 	text-align: center;
@@ -90,6 +90,18 @@ li:nth-child(even) {
 
 .mar {
 	margin-left: 10px;
+}
+
+.mar2 {
+	margin-left: 20px;
+}
+
+.mar3 {
+	margin-left: 11px;
+}
+
+.mar4 {
+	margin-left: 11px;
 }
 
 .width {
