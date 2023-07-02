@@ -68,13 +68,15 @@
           <input type="checkbox" onclick="this.form.elements['DS_nass'].disabled = !this.checked">
           <input class="width" type="number" name="DS_nass" placeholder="St" disabled>
 
-          <li>Verlängerung für Bohrkrohnen <input class="mar" type="checkbox" name="Verlängerung für Bohrkrohnen">
-            <input class="width" type="number" name="Verlängerung KB" value="number" placeholder="St"></li>
+          <li>Verlängerung für Bohrkrohnen <input class="mar" type="checkbox"
+              onclick="this.form.elements['Verlängerung/Bohrkrohnen'].disabled = !this.checked"> <input class="width"
+              type="number" name="Verlängerung/Bohrkrohnen" placeholder="St" disabled></li>
           <li>Adapter Hilti <input class="mar" type="checkbox" name="Adapter Hilti"></li>
           <li>Adapter Eibenstock <input class="mar" type="checkbox" name="Adapter Eibenstock"></li>
           <li>Staubabsaugung <input class="mar" type="checkbox" name="Adapter Eibenstock"></li>
-          <li>Schlitzscheiben <input class="mar" type="checkbox" name="Schlitzscheiben"> <input class="width"
-              type="number" name="Schlitzscheiben" value="number" placeholder="St">
+          <li>Schlitzscheiben <input class="mar" type="checkbox"
+              onclick="this.form.elements['Schlitzscheiben'].disabled = !this.checked"> <input class="width"
+              type="number" name="Schlitzscheiben" placeholder="St" disabled>
           </li>
         </ol>
       </fieldset>
@@ -90,7 +92,7 @@
           <li>Handschuhe <input class="mar" type="checkbox" name="Handschuhe" value="7"> 7 <input class="mar"
               type="checkbox" name="Handschuhe" value="8"> 8 <input class="mar" type="checkbox" name="Handschuhe"
               value="9">
-            9 <input class="width" type="number" name="Ilość" value="number" placeholder="St"></li>
+            9 <input class="width" type="number" placeholder="St"></li>
           <li>Kabeltrommel <input class="mar" type="checkbox" name="Kabeltrommel"></li>
           <li>Baustellenlampe <input class="mar" type="checkbox" name="Baustellenlampe"></li>
           <li>Zollstock <input class="mar" type="checkbox"
@@ -105,7 +107,8 @@
               onclick="this.form.elements['Cuttermesser'].disabled = !this.checked"> <input class="width" type="number"
               name="Cuttermesser" placeholder="St" disabled></li>
           <li>Meißel <input class="mar" type="checkbox" onclick="this.form.elements['Meißel'].disabled = !this.checked">
-            <input class="width" type="number" name="Meißel" placeholder="St" disabled></li>
+            <input class="width" type="number" name="Meißel" placeholder="St" disabled>
+          </li>
           <li>Kupferringe <input class="mar" type="checkbox" name="Kupferringe"></li>
           <li>Kugelschreiber <input class="mar" type="checkbox" name="Kugelschreiber"></li>
         </ol>
