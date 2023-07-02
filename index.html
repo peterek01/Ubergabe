@@ -128,6 +128,45 @@
         </ol>
       </fieldset>
       <br>
+      <fieldset>
+        <legend>Maschinen</legend>
+        <ol>
+          <li>Eibenstock <input class="mar" type="checkbox" name="Eibenstock"></li>
+          <li>Baier <input class="mar" type="checkbox" name="Baier"></li>
+        </ol>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Bohrer</legend>
+        <ol>
+          <li>Bohrer (mm)</li>
+          <input class="mar" type="checkbox" name="Bohrer" value="12"> 12
+          <input class="mar" type="checkbox" name="Bohrer" value="14"> 14
+          <input class="mar" type="checkbox" name="Bohrer" value="16"> 16
+          <input class="mar" type="checkbox" name="Bohrer" value="18"> 18
+          <input class="mar" type="checkbox" name="Bohrer" value="20"> 20
+          <input class="mar" type="checkbox" name="Bohrer" value="22"> 22
+          <input class="mar" type="checkbox" name="Bohrer" value="25"> 25
+          <input class="mar" type="checkbox" name="Bohrer" value="30"> 30
+          <input class="mar" type="checkbox" onclick="this.form.elements['Andere_Bohrer'].disabled = !this.checked">
+          Andere <input class="width" type="text" name="Andere_Bohrer" placeholder="St" disabled>
+        </ol>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Andere</legend>
+        <ol>
+          <li>Wartungsspray <input class="mar" type="checkbox" name="Wartungsspray"></li>
+          <li>Maschinenfett <input class="mar" type="checkbox" name="Maschinenfett"></li>
+          <li>Handcreme <input class="mar" type="checkbox" name="Handcreme"></li>
+          <li>Ersatzkabel <input class="mar" type="checkbox" name="Ersatzkabel"></li>
+          <li>Stecker <input class="mar" type="checkbox" name="Stecker"></li>
+          <li>Aufmaßzettel <input class="mar" type="checkbox" name="Aufmaßzettel"></li>
+          <li>Staubsaugerfilter <input class="mar" type="checkbox" name="Staubsaugerfilter"></li>
+          <li>Kanister <input class="mar" type="checkbox" name="Adapter Hilti"></li>
+          <li>Schlauch <input class="mar" type="checkbox" name="Adapter Hilti"></li>
+        </ol>
+      </fieldset>
       <!-- <ol>
         <li>Bohrer (mm)</li><input class="mar" type="checkbox" name="Bohrer" value="10"> 10 <input class="mar"
           type="checkbox" name="Bohrer" value="12"> 12 <input class="mar" type="checkbox" name="Bohrer" value="14"> 14
