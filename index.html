@@ -51,36 +51,14 @@
       <fieldset>
         <legend>Dosensenken/Schlitzen</legend>
         <ol>
-          <li>Dosensenker: silber
-            <select name="Silber" id="dosensenker">
-              <option>0</option>
-              <option>5</option>
-              <option>10</option>
-              <option>15</option>
-              <option>20</option>
-            </select> rot:
-            <select name="Rot" id="dosensenker">
-              <option>0</option>
-              <option>5</option>
-              <option>10</option>
-              <option>15</option>
-              <option>20</option>
-            </select> Staubabsaugung:
-            <select name="Staubabsaugung" id="dosensenker">
-              <option>0</option>
-              <option>5</option>
-              <option>10</option>
-              <option>15</option>
-              <option>20</option>
-            </select> nass:
-            <select name="Nass" id="dosensenker">
-              <option>0</option>
-              <option>5</option>
-              <option>10</option>
-              <option>15</option>
-              <option>20</option>
-            </select>
-          </li>
+          <li>Dosensenker</li>
+          silber <input type="checkbox" name="Dosensenker" value="silber"
+            onclick="this.form.elements['silber'].disabled = !this.checked">
+          <input type="number" name="silber" disabled>
+          rot <input type="checkbox" name="Dosensenker" value="rot"
+            onclick="this.form.elements['rot'].disabled = !this.checked">
+          <input type="number" name="rot" disabled>
+
           <li>Verlängerung für Bohrkrohnen <input class="width" type="number" name="Ilość VB" value="number"
               placeholder="St"></li>
           <li>Adapter Hilti <input class="mar" type="checkbox" name="Adapter Hilti"></li>
