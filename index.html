@@ -60,33 +60,74 @@
           <input type="checkbox" onclick="this.form.elements['DS_rot'].disabled = !this.checked">
           <input class="width" type="number" name="DS_rot" placeholder="St" disabled>
 
+          Staubabsaugung
+          <input type="checkbox" onclick="this.form.elements['DS_Staubabsaugung'].disabled = !this.checked">
+          <input class="width" type="number" name="DS_Staubabsaugung" placeholder="St" disabled>
+
+          nass
+          <input type="checkbox" onclick="this.form.elements['DS_nass'].disabled = !this.checked">
+          <input class="width" type="number" name="DS_nass" placeholder="St" disabled>
+
           <li>Verlängerung für Bohrkrohnen <input class="width" type="number" name="Verlängerung KB" value="number"
               placeholder="St"></li>
           <li>Adapter Hilti <input class="mar" type="checkbox" name="Adapter Hilti"></li>
           <li>Adapter Eibenstock <input class="mar" type="checkbox" name="Adapter Eibenstock"></li>
+          <li>Staubabsaugung <input class="mar" type="checkbox" name="Adapter Eibenstock"></li>
           <li>Schlitzscheiben <input class="width" type="number" name="Schlitzscheiben" value="number" placeholder="St">
           </li>
         </ol>
       </fieldset>
+      <fieldset>
+        <legend>Werkzeug</legend>
+        <ol>
+          <li>Schlüssel <input class="mar" type="checkbox" name="Schlüssel 24"> 24 <input class="mar" type="checkbox"
+              name="Schlüssel 32"> 32 <input class="mar" type="checkbox" name="Schlüssel 41"> 41
+            <input class="mar" type="checkbox" name="Schlüssel Verstellbarer"> Verstellbarer <input class="mar"
+              type="checkbox" name="Schlüssel Schlitzmaschine"> Schlitzmaschine
+          </li>
+          <li>Handschuhe <input class="mar" type="checkbox" name="Handschuhe" value="7"> 7 <input class="mar"
+              type="checkbox" name="Handschuhe" value="8"> 8 <input class="mar" type="checkbox" name="Handschuhe"
+              value="9">
+            9 <input class="width" type="number" name="Ilość" value="number" placeholder="St"></li>
+          <li>Kabeltrommel <input class="mar" type="checkbox" name="Kabeltrommel"></li>
+          <li>Baustellenlampe <input class="mar" type="checkbox" name="Baustellenlampe"></li>
+          <li>Zollstock <input class="mar" type="checkbox" name="Zollstock"> <input class="width" type="number"
+              name="Ilość" value="number" placeholder="St"></li>
+          <li>Klebeband <input class="mar" type="checkbox" name="Klebeband" value="silber"> silber <input class="mar"
+              type="checkbox" name="Klebeband" value="rot/weiß"> rot/weiß</li>
+          <li>Bigpacks <input class="mar" type="checkbox" name="Bigpacks"> <input class="width" type="number"
+              name="Ilość" value="number" placeholder="St"></li>
+          <li>Cuttermesser <input class="mar" type="checkbox" name="Cuttermesser"> <input class="width" type="number"
+              name="Ilość" value="number" placeholder="St"></li>
+          <li>Meißel <input class="mar" type="checkbox" name="Meißel"> <input class="width" type="number" name="Ilość"
+              value="number" placeholder="St"></li>
+          <li>Kupferringe <input class="mar" type="checkbox" name="Kupferringe"></li>
+          <li>Kugelschreiber <input class="mar" type="checkbox" name="Kugelschreiber"></li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>Kernbohrung</legend>
+        <ol>
+          <li>KS Dübeln <input class="mar" type="checkbox" name="Adapter Hilti"></li>
+          <li>Beton Dübeln <input class="mar" type="checkbox" name="Adapter Hilti"></li>
+          <li>Hammer <input class="mar" type="checkbox" name="Adapter Hilti"></li>
+          <li>Einschlagbolzen <input class="mar" type="checkbox" name="Adapter Hilti"></li>
+          <li>Kordelstange <input class="mar" type="checkbox" name="Adapter Hilti"></li>
+          <li>Mutter für Kernbohrständer <input class="mar" type="checkbox" name="Adapter Hilti"></li>
+          <li>Wasserpumpe <input class="mar" type="checkbox" name="Adapter Hilti"></li>
+          <li>Kanister <input class="mar" type="checkbox" name="Adapter Hilti"></li>
+          <li>Schlauch <input class="mar" type="checkbox" name="Adapter Hilti"></li>
+        </ol>
+      </fieldset>
       <br>
-      <ol>
-        <li>Schlüssel</li><input class="mar" type="checkbox" name="Schlüssel 24"> 24 <input class="mar" type="checkbox"
-          name="Schlüssel 32"> 32 <input class="mar" type="checkbox" name="Schlüssel 41"> 41
-        <input class="mar" type="checkbox" name="Schlüssel Verstellbarer"> Verstellbarer <input class="mar"
-          type="checkbox" name="Schlüssel Schlitzmaschine"> Schlitzmaschine
-        <li>Handschuhe</li><input class="mar" type="checkbox" name="Handschuhe" value="7"> 7 <input class="mar"
-          type="checkbox" name="Handschuhe" value="8"> 8 <input class="mar" type="checkbox" name="Handschuhe" value="9">
-        9 <input class="width" type="number" name="Ilość" value="number" placeholder="St">
-        <li>Kupferringe <input class="mar" type="checkbox" name="Kupferringe"></li>
-        <li>Wasserkanister <input type="checkbox" name="Wasserkanister"> <input class="width" type="number" name="Ilość"
-            value="number" placeholder="St"></li>
+      <!-- <ol>
         <li>Bohrer (mm)</li><input class="mar" type="checkbox" name="Bohrer" value="10"> 10 <input class="mar"
           type="checkbox" name="Bohrer" value="12"> 12 <input class="mar" type="checkbox" name="Bohrer" value="14"> 14
         <input class="mar" type="checkbox" name="Bohrer" value="16"> 16 <input class="mar" type="checkbox" name="Bohrer"
           value="18"> 18 <input class="mar" type="checkbox" name="Bohrer" value="20"> 20
         <li>Aufmaßzettel <input type="checkbox" name="Aufmaßzettel"></li>
         <li></li>
-      </ol>
+      </ol> -->
       <textarea class="infos" name="infos" cols="10" rows="4" placeholder="Sonstiges"></textarea>
       <button class="send" type="submit">Send</button>
     </div>
