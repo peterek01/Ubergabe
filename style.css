@@ -5,8 +5,17 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+	height: 100vh;
+	width: 100vw;
+}
+
+h1 {
+	margin: 15px;
+}
+
 form {
-	width: 90%;
+	width: 95vw;
 	border: 3px solid black;
 	margin: 10px auto;
 }
@@ -18,36 +27,27 @@ form {
 
 .person,
 .car {
+	display: block;
 	font-size: 18px;
 }
 
-/* input {
-  display: inline-block;
-  margin-right: 10px;
-} */
-
-h1 {
-	margin: 15px;
-}
-
 .car {
-	display: block;
-	margin: 10px;
+	margin-top: 15px;
 }
 
 .search {
 	display: block;
-	margin: 0 auto 40px;
+	margin: 40px auto;
 	text-align: center;
 	font-size: 20px;
 }
 
 .listItems {
-	margin: 30px 100px;
+	margin: 4% 4%;
 }
 
 li {
-	margin-top: 10px;
+	margin: 10px;
 	font-size: 16px;
 }
 
@@ -93,4 +93,8 @@ ol {
 	margin-left: 4%;
 	margin-right: 4%;
 	margin-bottom: 2%;
+}
+
+fieldset {
+	margin-top: 2vh;
 }
