@@ -51,22 +51,20 @@
       <fieldset>
         <legend>Dosensenken/Schlitzen</legend>
         <ol>
-          <li>Dosensenker</li>
-          silber
-          <input type="checkbox" onclick="this.form.elements['DS_silber'].disabled = !this.checked">
-          <input class="width" type="number" name="DS_silber" placeholder="St" disabled>
+          <li>Dosensenker<br>
+            <input type="checkbox" onclick="this.form.elements['DS_silber'].disabled = !this.checked"> silber
+            <input class="width" type="number" name="DS_silber" placeholder="St" disabled><br>
 
-          rot
-          <input type="checkbox" onclick="this.form.elements['DS_rot'].disabled = !this.checked">
-          <input class="width" type="number" name="DS_rot" placeholder="St" disabled>
+            <input type="checkbox" onclick="this.form.elements['DS_rot'].disabled = !this.checked"> rot
+            <input class="width" type="number" name="DS_rot" placeholder="St" disabled><br>
 
-          Staubabsaugung
-          <input type="checkbox" onclick="this.form.elements['DS_Staubabsaugung'].disabled = !this.checked">
-          <input class="width" type="number" name="DS_Staubabsaugung" placeholder="St" disabled>
+            <input type="checkbox" onclick="this.form.elements['DS_Staubabsaugung'].disabled = !this.checked">
+            Staubabsaugung
+            <input class="width" type="number" name="DS_Staubabsaugung" placeholder="St" disabled><br>
 
-          nass
-          <input type="checkbox" onclick="this.form.elements['DS_nass'].disabled = !this.checked">
-          <input class="width" type="number" name="DS_nass" placeholder="St" disabled>
+            <input type="checkbox" onclick="this.form.elements['DS_nass'].disabled = !this.checked"> nass
+            <input class="width" type="number" name="DS_nass" placeholder="St" disabled>
+          </li>
 
           <li>Verlängerung für Bohrkrohnen <input class="mar" type="checkbox"
               onclick="this.form.elements['Verlängerung/Bohrkrohnen'].disabled = !this.checked"> <input class="width"
@@ -83,11 +81,11 @@
       <fieldset>
         <legend>Werkzeuge</legend>
         <ol>
-          <li>Schlüssel <input class="mar" type="checkbox" name="Schlüssel" value="24"> 24 <input class="mar"
-              type="checkbox" name="Schlüssel" value="32"> 32 <input class="mar" type="checkbox" name="Schlüssel"
-              value="41"> 41
-            <input class="mar" type="checkbox" name="Schlüssel" value="verstellbarer"> verstellbarer <input class="mar"
-              type="checkbox" name="Schlüssel" value="Schlitzmaschine"> Schlitzmaschine
+          <li>Schlüssel <br>
+            <input class="mar" type="checkbox" name="Schlüssel" value="24"> 24 <input class="mar" type="checkbox"
+              name="Schlüssel" value="32"> 32 <input class="mar" type="checkbox" name="Schlüssel" value="41"> 41<br>
+            <input class="mar" type="checkbox" name="Schlüssel" value="verstellbarer"> verstellbarer<br>
+            <input class="mar" type="checkbox" name="Schlüssel" value="Schlitzmaschine"> Schlitzmaschine
           </li>
           <li>Handschuhe <input class="mar" type="checkbox" name="Handschuhe" value="7"> 7 <input class="mar"
               type="checkbox" name="Handschuhe" value="8"> 8 <input class="mar" type="checkbox" name="Handschuhe"
@@ -139,38 +137,56 @@
       <fieldset>
         <legend>Bohrer</legend>
         <ol>
-          <li>Bohrer (mm)</li>
-          <input type="checkbox" name="Bohrer" value="12"> 12
-          <input class="mar" type="checkbox" name="Bohrer" value="14"> 14
-          <input class="mar" type="checkbox" name="Bohrer" value="16"> 16
-          <input class="mar" type="checkbox" name="Bohrer" value="18"> 18
-          <input class="mar" type="checkbox" name="Bohrer" value="20"> 20
-          <input class="mar" type="checkbox" name="Bohrer" value="22"> 22
-          <input class="mar" type="checkbox" name="Bohrer" value="25"> 25
-          <input class="mar" type="checkbox" name="Bohrer" value="30"> 30
-          <input class="mar" type="checkbox" onclick="this.form.elements['Andere_Bohrer'].disabled = !this.checked">
-          Andere <input class="width" type="text" name="Andere_Bohrer" placeholder="St" disabled>
+          <li>Bohrer (mm)<br>
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_12'].disabled = !this.checked"> 12
+            <input class="width" type="number" name="Bohrer_12" placeholder="St" disabled>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_14'].disabled = !this.checked"> 14
+            <input class="width" type="number" name="Bohrer_14" placeholder="St" disabled>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_16'].disabled = !this.checked"> 16
+            <input class="width" type="number" name="Bohrer_16" placeholder="St" disabled><br>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_18'].disabled = !this.checked"> 18
+            <input class="width" type="number" name="Bohrer_18" placeholder="St" disabled>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_20'].disabled = !this.checked"> 20
+            <input class="width" type="number" name="Bohrer_20" placeholder="St" disabled>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_22'].disabled = !this.checked"> 22
+            <input class="width" type="number" name="Bohrer_22" placeholder="St" disabled><br>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_25'].disabled = !this.checked"> 25
+            <input class="width" type="number" name="Bohrer_25" placeholder="St" disabled>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_30'].disabled = !this.checked"> 30
+            <input class="width" type="number" name="Bohrer_30" placeholder="St" disabled>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Andere_Bohrer'].disabled = !this.checked">
+            Andere <input class="width" type="text" name="Andere_Bohrer" placeholder="St" disabled>
+          </li>
         </ol>
       </fieldset>
       <br>
       <fieldset>
         <legend>Bohrkrohnen</legend>
         <ol>
-          <li>Durchmesser (mm)</li>
-          <input type="checkbox" name="Bohrkrohne" value="12"> 12
-          <input class="mar" type="checkbox" name="Bohrkrohne" value="40"> 40
-          <input class="mar" type="checkbox" name="Bohrkrohne" value="50"> 50
-          <input class="mar" type="checkbox" name="Bohrkrohne" value="60"> 60
-          <input class="mar" type="checkbox" name="Bohrkrohne" value="80"> 80
-          <input class="mar" type="checkbox" name="Bohrkrohne" value="100"> 100
-          <input class="mar" type="checkbox" name="Bohrkrohne" value="120"> 120
-          <input class="mar" type="checkbox" name="Bohrkrohne" value="150"> 150
-          <input class="mar" type="checkbox" name="Bohrkrohne" value="160"> 160
-          <input class="mar" type="checkbox" name="Bohrkrohne" value="180"> 180
-          <input class="mar" type="checkbox" name="Bohrkrohne" value="200"> 200
-          <input class="mar" type="checkbox" name="Bohrkrohne" value="250"> 250
-          <input class="mar" type="checkbox" onclick="this.form.elements['Andere_Bohrkrone'].disabled = !this.checked">
-          Andere <input class="width" type="text" name="Andere_Bohrkrone" placeholder="St" disabled>
+          <li>Durchmesser (mm)<br>
+            <input class="mar" type="checkbox" name="Bohrkrohne" value="40"> 40
+            <input class="mar" type="checkbox" name="Bohrkrohne" value="50"> 50
+            <input class="mar" type="checkbox" name="Bohrkrohne" value="60"> 60
+            <input class="mar" type="checkbox" name="Bohrkrohne" value="80"> 80
+            <input class="mar" type="checkbox" name="Bohrkrohne" value="100"> 100<br>
+            <input class="mar" type="checkbox" name="Bohrkrohne" value="120"> 120
+            <input class="mar" type="checkbox" name="Bohrkrohne" value="150"> 150
+            <input class="mar" type="checkbox" name="Bohrkrohne" value="160"> 160
+            <input class="mar" type="checkbox" name="Bohrkrohne" value="180"> 180<br>
+            <input class="mar" type="checkbox" name="Bohrkrohne" value="200"> 200
+            <input class="mar" type="checkbox" name="Bohrkrohne" value="250"> 250
+            <input class="mar" type="checkbox"
+              onclick="this.form.elements['Andere_Bohrkrone'].disabled = !this.checked">
+            Andere <input class="width" type="text" name="Andere_Bohrkrone" placeholder="St" disabled>
+          </li>
         </ol>
       </fieldset>
       <br>

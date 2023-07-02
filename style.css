@@ -15,7 +15,7 @@ h1 {
 }
 
 form {
-	width: 95vw;
+	width: 97vw;
 	border: 3px solid black;
 	margin: 10px auto;
 }
@@ -43,13 +43,13 @@ form {
 }
 
 .listItems {
-	margin: 4% 4%;
+	margin: 4% 2%;
 }
 
 li {
 	margin: 10px;
+	margin-left: 25px;
 	font-size: 16px;
-	list-style: none;
 }
 
 li:nth-child(odd) {
@@ -73,9 +73,19 @@ li:nth-child(even) {
 	display: block;
 	margin: 20px auto;
 	height: 40px;
-	width: 100%;
+	width: 30%;
 	text-align: center;
 	font-size: 18px;
+	background-color: black;
+	color: white;
+	border-radius: 5px 30px 5px 30px;
+	transition: 0.3s;
+}
+
+.send:hover {
+	background-color: lightgrey;
+	color: black;
+	border: 2px solid black;
 }
 
 .mar {
@@ -84,6 +94,7 @@ li:nth-child(even) {
 
 .width {
 	width: 40px;
+	text-align: center;
 }
 
 legend {
@@ -91,8 +102,6 @@ legend {
 }
 
 ol {
-	margin-left: 1vw;
-	margin-right: 1vw;
 	margin-bottom: 2vh;
 }
 
