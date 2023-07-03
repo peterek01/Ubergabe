@@ -17,22 +17,22 @@
       <h1>Inventar vom: <span class="inventDay"></span></h1>
       <label class="person">Wer führt die Inventur durch?</label>
       <select name="worker">
-        <option>Natan</option>
-        <option>Michał W</option>
+        <option>Arek K</option>
         <option>Arek S</option>
         <option>Artur</option>
-        <option>Sebastian</option>
-        <option>Arek K</option>
-        <option>Tomasz</option>
-        <option>Michał B</option>
-        <option>Jakub</option>
-        <option>Dmytro</option>
-        <option>Maks</option>
-        <option>Emil</option>
         <option>David</option>
+        <option>Dmytro</option>
+        <option>Emil</option>
+        <option>Jakub</option>
+        <option>Maks</option>
+        <option>Michał B</option>
         <option>Michał O</option>
+        <option>Michał W</option>
+        <option>Natan</option>
         <option>Pawel</option>
         <option>Przemek</option>
+        <option>Sebastian</option>
+        <option>Tomasz</option>
         <option>Yuriy</option>
       </select><br>
       <label class="car" for="user">Welches Auto?</label>
@@ -67,10 +67,6 @@
             <input class="mar" type="checkbox" onclick="this.form.elements['DS_nass'].disabled = !this.checked"> nass
             <input class="width" type="number" name="DS_nass" placeholder="St" disabled>
           </li>
-
-          <li>Verlängerung für Bohrkrohnen <input class="mar" type="checkbox"
-              onclick="this.form.elements['Verlängerung/Bohrkrohnen'].disabled = !this.checked"> <input class="width"
-              type="number" name="Verlängerung/Bohrkrohnen" placeholder="St" disabled></li>
           <li>Adapter Hilti <input class="mar" type="checkbox" name="Adapter Hilti"></li>
           <li>Adapter Eibenstock <input class="mar" type="checkbox" name="Adapter Eibenstock"></li>
           <li>Staubabsaugung <input class="mar" type="checkbox" name="Adapter Eibenstock"></li>
@@ -91,8 +87,7 @@
           </li>
           <li>Handschuhe <input class="mar" type="checkbox" name="Handschuhe" value="7"> 7 <input class="mar"
               type="checkbox" name="Handschuhe" value="8"> 8 <input class="mar" type="checkbox" name="Handschuhe"
-              value="9">
-            9 <input class="width" type="text" placeholder="St"></li>
+              value="9"> 9 </li>
           <li>Kabeltrommel <input class="mar" type="checkbox" name="Kabeltrommel"></li>
           <li>Baustellenlampe <input class="mar" type="checkbox" name="Baustellenlampe"></li>
           <li>Zollstock <input class="mar" type="checkbox"
@@ -119,11 +114,16 @@
           <li>KS Dübeln <input class="mar" type="checkbox" name="KS_Dübeln"></li>
           <li>Beton Dübeln <input class="mar" type="checkbox" name="Beton_Dübeln"></li>
           <li>Hammer <input class="mar" type="checkbox" name="Hammer"></li>
+          <li>Verlängerung für Bohrkrohnen <input class="mar" type="checkbox"
+              onclick="this.form.elements['Verlängerung/Bohrkrohnen'].disabled = !this.checked"> <input class="width"
+              type="number" name="Verlängerung/Bohrkrohnen" placeholder="St" disabled></li>
           <li>Einschlagbolzen <input class="mar" type="checkbox" name="Einschlagbolzen"></li>
           <li>Kordelstange <input class="mar" type="checkbox" name="Kordelstange"></li>
           <li>Mutter für Kernbohrständer <input class="mar" type="checkbox" name="Mutter für Kernbohrständer"></li>
           <li>Wasserpumpe <input class="mar" type="checkbox" name="Wasserpumpe"></li>
-          <li>Kanister <input class="mar" type="checkbox" name="Kanister"></li>
+          <li>Wasserkanister <input class="mar" type="checkbox"
+              onclick="this.form.elements['Wasserkanister'].disabled = !this.checked"> <input class="width"
+              type="number" name="Wasserkanister" placeholder="St" disabled></li>
           <li>Schlauch <input class="mar" type="checkbox" name="Schlauch"></li>
           <li>Schlauchkupplung <input class="mar" type="checkbox" name="Schlauchkupplung"></li>
         </ol>
@@ -132,8 +132,25 @@
       <fieldset>
         <legend>Maschinen</legend>
         <ol>
-          <li>Eibenstock <input class="mar" type="checkbox" name="Eibenstock"></li>
-          <li>Baier <input class="mar" type="checkbox" name="Baier"></li>
+          <li>Eibenstock <input class="mar" type="checkbox"
+              onclick="this.form.elements['Eibenstock'].disabled = !this.checked">
+            <input class="width" type="number" name="Eibenstock" placeholder="St" disabled>
+          </li>
+          <li>Baier <input class="mar" type="checkbox" onclick="this.form.elements['Baier'].disabled = !this.checked">
+            <input class="width" type="number" name="Baier" placeholder="St" disabled>
+          </li>
+          <li>Schlitzmaschine <input class="mar" type="checkbox"
+              onclick="this.form.elements['Schlitzmaschine'].disabled = !this.checked">
+            <input class="width" type="number" name="Schlitzmaschine" placeholder="St" disabled>
+          </li>
+          <li>Stemmhammer <input class="mar" type="checkbox"
+              onclick="this.form.elements['Stemmhammer'].disabled = !this.checked">
+            <input class="width" type="number" name="Stemmhammer" placeholder="St" disabled>
+          </li>
+          <li>Staubsauger <input class="mar" type="checkbox"
+              onclick="this.form.elements['Staubsauger'].disabled = !this.checked">
+            <input class="width" type="number" name="Staubsauger" placeholder="St" disabled>
+          </li>
         </ol>
       </fieldset>
       <br>
@@ -235,7 +252,21 @@
           <li>Ersatzkabel <input class="mar" type="checkbox" name="Ersatzkabel"></li>
           <li>Stecker <input class="mar" type="checkbox" name="Stecker"></li>
           <li>Aufmaßzettel <input class="mar" type="checkbox" name="Aufmaßzettel"></li>
-          <li>Staubsaugerfilter <input class="mar" type="checkbox" name="Staubsaugerfilter"></li>
+          <li>Staubsaugerschlauch</li>
+          <li>Staubsaugerfilter
+            <input class="mar" type="checkbox" onclick="this.form.elements['Filter_perform'].disabled = !this.checked">
+            performance
+            <input class="width" type="number" name="Filter_perform" placeholder="St" disabled>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Filter_univ'].disabled = !this.checked">
+            universal
+            <input class="width" type="number" name="Filter_univ" placeholder="St" disabled>
+          </li>
+          <li>Besen
+            <input class="mar" type="checkbox" name="Bürste" value="7"> Bürste
+            <input class="mar" type="checkbox" name="Stiefel" value="8"> Stiefel
+          </li>
+          <li>Schaufel <input class="mar" type="checkbox" name="Schaufel"></li>
         </ol>
       </fieldset>
       <textarea class="infos" name="infos" cols="10" rows="4" placeholder="Sonstiges"></textarea>
