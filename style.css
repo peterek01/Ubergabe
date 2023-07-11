@@ -23,11 +23,8 @@ form {
 .person,
 .car {
 	display: block;
-	font-size: 18px;
-}
-
-.car {
-	margin-top: 15px;
+	font-size: 16px;
+	margin: 5px auto;
 }
 
 input {

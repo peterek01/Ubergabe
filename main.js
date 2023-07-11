@@ -6,6 +6,16 @@ const year = now.getFullYear();
 
 date.textContent = `${day}.${month}.${year}`;
 
+const btn = document.querySelector(".send");
+const select = document.querySelector("select~option");
+
+const sendForm = () => {
+	if (select === "wählen")
+		return alert("Wählst du einen Mitarbeiter oder ein Auto");
+};
+
+btn.addEventListener("submit", sendForm);
+
 // const btn = document.querySelector('.send');
 
 // const sendForm = () => {

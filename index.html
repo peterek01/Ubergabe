@@ -14,9 +14,11 @@
 <body>
   <form action="https://formspree.io/f/moqoayyk" method="POST">
     <div class="infoDaten">
+      <input name="Übergabe" type="hidden" value="Materialliste von {{ name }}" />
       <h1>Inventar vom: <span class="inventDay"></span></h1>
       <label class="person">Wer führt die Inventur durch?</label>
-      <select name="worker">
+      <select class="person" name="worker">
+        <option disabled selected>wählen</option>
         <option>Arek K</option>
         <option>Arek S</option>
         <option>Artur</option>
@@ -37,12 +39,15 @@
         <option>Yuriy</option>
       </select><br>
       <label class="car" for="user">Welches Auto?</label>
-      <select name="car" id="">
-        <option>1APF4567</option>
-        <option>2APF4567</option>
-        <option>3APF4567</option>
-        <option>4APF4567</option>
-        <option>5APF4567</option>
+      <select class="car" name="car">
+        <option disabled selected>wählen</option>
+        <option>Blau</option>
+        <option>Hellblau</option>
+        <option>Kangoo</option>
+        <option>Kurz</option>
+        <option>PAF</option>
+        <option>TFK</option>
+        <option>Toyota</option>
       </select>
     </div>
     <div class="listItems">
@@ -264,8 +269,8 @@
             <input class="width" type="number" name="Filter_univ" placeholder="St" disabled>
           </li>
           <li>Besen
-            <input class="mar" type="checkbox" name="Bürste" value="7"> Bürste
-            <input class="mar" type="checkbox" name="Stiel" value="8"> Stiel
+            <input class="mar" type="checkbox" name="Bürste"> Bürste
+            <input class="mar" type="checkbox" name="Stiel"> Stiel
           </li>
           <li>Schaufel <input class="mar" type="checkbox" name="Schaufel"></li>
         </ol>
