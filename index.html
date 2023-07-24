@@ -14,7 +14,6 @@
 <body>
   <form action="https://formspree.io/f/moqoayyk" method="POST">
     <div class="infoDaten">
-      <input name="Übergabe" type="hidden" value="Materialliste von {{ # _fields }}" />
       <h1>Inventar vom: <span class="inventDay"></span></h1>
       <label class="person">Wer führt die Inventur durch?</label>
       <select class="person" name="worker">
@@ -68,7 +67,7 @@
             <input class="mar" type="checkbox"
               onclick="this.form.elements['DS_Staubabsaugung'].disabled = !this.checked">
             staubabsaugen
-            <input class="width" type="number" name="DS_Staubabsaugung" placeholder="St" disabled><br>
+            <input class="width" type="number" name="DS_Staubabsaugen" placeholder="St" disabled><br>
 
             <input class="mar" type="checkbox" onclick="this.form.elements['DS_nass'].disabled = !this.checked"> nass
             <input class="width" type="number" name="DS_nass" placeholder="St" disabled>
@@ -81,7 +80,6 @@
               onclick="this.form.elements['Adapter_Eibenstock'].disabled = !this.checked">
             <input class="width" type="number" name="Adapter_Eibenstock" placeholder="St" disabled>
           </li>
-          <li>Staubabsaugung <input class="mar" type="checkbox" name="Adapter Eibenstock"></li>
           <li>Schlitzscheiben <input class="mar" type="checkbox"
               onclick="this.form.elements['Schlitzscheiben'].disabled = !this.checked"> <input class="width"
               type="number" name="Schlitzscheiben" placeholder="St" disabled>
@@ -93,12 +91,12 @@
         <ol>
           <li>Schlüssel <br>
             <input class="mar" type="checkbox" name="Schlüssel" value="24"> 24 <input class="mar" type="checkbox"
-              name="Schlüssel" value="32"> 32 <input class="mar" type="checkbox" name="Schlüssel" value="41"> 41<br>
+              name="Schlüssel" value="36"> 36 <input class="mar" type="checkbox" name="Schlüssel" value="41"> 41<br>
             <input class="mar" type="checkbox" name="Schlüssel" value="verstellbarer"> verstellbarer<br>
             <input class="mar" type="checkbox" name="Schlüssel" value="Schlitzmaschine"> Schlitzmaschine<br>
             <input class="mar" type="checkbox" name="Schlüssel" value="Schlitzmaschine"> Zange
           </li>
-          <li>Handschuhe <input class="mar" type="checkbox" name="Handschuhe" value="7"> 8 <input class="mar"
+          <li>Handschuhe <input class="mar" type="checkbox" name="Handschuhe" value="8"> 8 <input class="mar"
               type="checkbox" name="Handschuhe" value="9"> 9 </li>
           <!-- <li>Baustellenlampe <input class="mar" type="checkbox" name="Baustellenlampe"></li> -->
           <li>Zollstock <input class="mar" type="checkbox"
@@ -107,7 +105,7 @@
           <li>Klebeband <input class="mar" type="checkbox" name="Klebeband" value="silber"> silber <input class="mar"
               type="checkbox" name="Klebeband" value="rot/weiß"> rot/weiß</li>
           <li>BigPack <input class="mar" type="checkbox"
-              onclick="this.form.elements['Bigpacks'].disabled = !this.checked"> <input class="width" type="number"
+              onclick="this.form.elements['BigPack'].disabled = !this.checked"> <input class="width" type="number"
               name="Bigpacks" placeholder="St" disabled></li>
           <li>Cuttermesser <input class="mar" type="checkbox"
               onclick="this.form.elements['Cuttermesser'].disabled = !this.checked"> <input class="width" type="number"
