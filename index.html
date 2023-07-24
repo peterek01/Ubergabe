@@ -67,7 +67,7 @@
 
             <input class="mar" type="checkbox"
               onclick="this.form.elements['DS_Staubabsaugung'].disabled = !this.checked">
-            Staubabsaugung
+            staubabsaugen
             <input class="width" type="number" name="DS_Staubabsaugung" placeholder="St" disabled><br>
 
             <input class="mar" type="checkbox" onclick="this.form.elements['DS_nass'].disabled = !this.checked"> nass
@@ -89,19 +89,18 @@
             <input class="mar" type="checkbox" name="Schlüssel" value="24"> 24 <input class="mar" type="checkbox"
               name="Schlüssel" value="32"> 32 <input class="mar" type="checkbox" name="Schlüssel" value="41"> 41<br>
             <input class="mar" type="checkbox" name="Schlüssel" value="verstellbarer"> verstellbarer<br>
-            <input class="mar" type="checkbox" name="Schlüssel" value="Schlitzmaschine"> Schlitzmaschine
+            <input class="mar" type="checkbox" name="Schlüssel" value="Schlitzmaschine"> Schlitzmaschine<br>
+            <input class="mar" type="checkbox" name="Schlüssel" value="Schlitzmaschine"> Zange
           </li>
-          <li>Handschuhe <input class="mar" type="checkbox" name="Handschuhe" value="7"> 7 <input class="mar"
-              type="checkbox" name="Handschuhe" value="8"> 8 <input class="mar" type="checkbox" name="Handschuhe"
-              value="9"> 9 </li>
-          <li>Kabeltrommel <input class="mar" type="checkbox" name="Kabeltrommel"></li>
-          <li>Baustellenlampe <input class="mar" type="checkbox" name="Baustellenlampe"></li>
+          <li>Handschuhe <input class="mar" type="checkbox" name="Handschuhe" value="7"> 8 <input class="mar"
+              type="checkbox" name="Handschuhe" value="9"> 9 </li>
+          <!-- <li>Baustellenlampe <input class="mar" type="checkbox" name="Baustellenlampe"></li> -->
           <li>Zollstock <input class="mar" type="checkbox"
               onclick="this.form.elements['Zollstock'].disabled = !this.checked"> <input class="width" type="number"
               name="Zollstock" placeholder="St" disabled></li>
           <li>Klebeband <input class="mar" type="checkbox" name="Klebeband" value="silber"> silber <input class="mar"
               type="checkbox" name="Klebeband" value="rot/weiß"> rot/weiß</li>
-          <li>Bigpacks <input class="mar" type="checkbox"
+          <li>BigPack <input class="mar" type="checkbox"
               onclick="this.form.elements['Bigpacks'].disabled = !this.checked"> <input class="width" type="number"
               name="Bigpacks" placeholder="St" disabled></li>
           <li>Cuttermesser <input class="mar" type="checkbox"
@@ -149,13 +148,13 @@
               onclick="this.form.elements['Schlitzmaschine'].disabled = !this.checked">
             <input class="width" type="number" name="Schlitzmaschine" placeholder="St" disabled>
           </li>
-          <li>Stemmhammer <input class="mar" type="checkbox"
+          <!-- <li>Stemmhammer <input class="mar" type="checkbox"
               onclick="this.form.elements['Stemmhammer'].disabled = !this.checked">
             <input class="width" type="number" name="Stemmhammer" placeholder="St" disabled>
-          </li>
-          <li>Staubsauger <input class="mar" type="checkbox"
+          </li> -->
+          <!-- <li>Staubsauger <input class="mar" type="checkbox"
               onclick="this.form.elements['Staubsauger'].disabled = !this.checked">
-            <input class="width" type="number" name="Staubsauger" placeholder="St" disabled>
+            <input class="width" type="number" name="Staubsauger" placeholder="St" disabled> -->
           </li>
         </ol>
       </fieldset>
@@ -260,19 +259,25 @@
           <li>Aufmaßzettel <input class="mar" type="checkbox" name="Aufmaßzettel"></li>
           <li>Staubsaugerschlauch</li>
           <li>Staubsaugerfilter<br>
-            <input class="mar" type="checkbox" onclick="this.form.elements['Filter_perform'].disabled = !this.checked">
+            <input class="mar" type="checkbox"
+              onclick="this.form.elements['Filter_performance'].disabled = !this.checked">
             performance
-            <input class="width" type="number" name="Filter_perform" placeholder="St" disabled>
+            <input class="width" type="number" name="Filter_performance" placeholder="St" disabled>
 
-            <input class="mar" type="checkbox" onclick="this.form.elements['Filter_univ'].disabled = !this.checked">
+            <input class="mar" type="checkbox"
+              onclick="this.form.elements['Filter_universal'].disabled = !this.checked">
             universal
-            <input class="width" type="number" name="Filter_univ" placeholder="St" disabled>
+            <input class="width" type="number" name="Filter_universal" placeholder="St" disabled>
           </li>
           <li>Besen
             <input class="mar" type="checkbox" name="Bürste"> Bürste
             <input class="mar" type="checkbox" name="Stiel"> Stiel
           </li>
           <li>Schaufel <input class="mar" type="checkbox" name="Schaufel"></li>
+          <li>Kabeltrommel <input class="mar" type="checkbox"
+              onclick="this.form.elements['Kabeltrommel'].disabled = !this.checked">
+            <input class="width" type="number" name="Kabeltrommel" placeholder="St" disabled>
+          </li>
         </ol>
       </fieldset>
       <textarea class="infos" name="infos" cols="10" rows="4" placeholder="Sonstiges"></textarea>
