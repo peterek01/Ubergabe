@@ -14,8 +14,8 @@
 <body>
   <form action="https://formspree.io/f/moqoayyk" method="POST">
     <div class="infoDaten">
-      <h1>Inventar vom: <span class="inventDay"></span></h1>
-      <label class="person">Wer führt die Inventur durch?</label>
+      <h1>Materialliste Bestellung vom: <span class="inventDay"></span></h1>
+      <!-- <label class="person">Wer führt die Inventur durch?</label>
       <select class="person" name="worker">
         <option disabled selected>wählen</option>
         <option>Arek K</option>
@@ -38,22 +38,22 @@
         <option>Sebastian</option>
         <option>Tomasz</option>
         <option>Yuriy</option>
-      </select><br>
+      </select><br> -->
       <label class="car" for="user">Welches Auto?</label>
       <select class="car" name="car">
         <option disabled selected>wählen</option>
         <option>Blau</option>
         <option>Hellblau</option>
         <option>Kangoo</option>
-        <option>TFEL</option>
         <option>PAF</option>
+        <option>TFEL</option>
         <option>TFK</option>
         <option>Toyota</option>
       </select>
     </div>
     <div class="listItems">
       <!-- <input class="search" placeholder="Suchen"> -->
-      <p class="tel">Hast du eine Frage an Piotr? <a href="tel:+4917670834713">Ruf direkt an</a></p>
+      <p class="tel">Hast du eine Frage? <a href="tel:+4917670834713">Ruf direkt an</a></p>
       <br>
       <fieldset>
         <legend>Dosensenken/Schlitzen</legend>
@@ -61,30 +61,30 @@
           <li>Dosensenker<br>
             <input class="mar" type="checkbox" onclick="this.form.elements['DS_silber'].disabled = !this.checked">
             silber
-            <input class="width" type="number" name="DS_silber" placeholder="St" disabled><br>
+            <input class="width" type="number" name="DS_silber" placeholder="St" disabled> /12<br>
 
             <input class="mar" type="checkbox" onclick="this.form.elements['DS_rot'].disabled = !this.checked"> rot
-            <input class="width" type="number" name="DS_rot" placeholder="St" disabled><br>
+            <input class="width" type="number" name="DS_rot" placeholder="St" disabled> /12<br>
 
             <input class="mar" type="checkbox"
               onclick="this.form.elements['DS_Staubabsaugung'].disabled = !this.checked">
             staubabsaugen
-            <input class="width" type="number" name="DS_Staubabsaugen" placeholder="St" disabled><br>
+            <input class="width" type="number" name="DS_Staubabsaugen" placeholder="St" disabled> /10<br>
 
             <input class="mar" type="checkbox" onclick="this.form.elements['DS_nass'].disabled = !this.checked"> nass
-            <input class="width" type="number" name="DS_nass" placeholder="St" disabled>
+            <input class="width" type="number" name="DS_nass" placeholder="St" disabled> /6-10
           </li>
           <li>Adapter Hilti <input class="mar" type="checkbox"
               onclick="this.form.elements['Adapter_Hilti'].disabled = !this.checked">
-            <input class="width" type="number" name="Adapter_Hilti" placeholder="St" disabled>
+            <input class="width" type="number" name="Adapter_Hilti" placeholder="St" disabled> /2
           </li>
           <li>Adapter Eibenstock <input class="mar" type="checkbox"
               onclick="this.form.elements['Adapter_Eibenstock'].disabled = !this.checked">
-            <input class="width" type="number" name="Adapter_Eibenstock" placeholder="St" disabled>
+            <input class="width" type="number" name="Adapter_Eibenstock" placeholder="St" disabled> /2
           </li>
           <li>Schlitzscheiben <input class="mar" type="checkbox"
               onclick="this.form.elements['Schlitzscheiben'].disabled = !this.checked"> <input class="width"
-              type="number" name="Schlitzscheiben" placeholder="St" disabled>
+              type="number" name="Schlitzscheiben" placeholder="St" disabled> /20
           </li>
         </ol>
       </fieldset>
@@ -92,11 +92,11 @@
         <legend>Werkzeuge</legend>
         <ol>
           <li>Schlüssel <br>
-            <input class="mar" type="checkbox" name="Schlüssel" value="24"> 24 <input class="mar" type="checkbox"
-              name="Schlüssel" value="36"> 36 <input class="mar" type="checkbox" name="Schlüssel" value="41"> 41<br>
-            <input class="mar" type="checkbox" name="Schlüssel" value="verstellbarer"> verstellbarer<br>
-            <input class="mar" type="checkbox" name="Schlüssel" value="Schlitzmaschine"> Schlitzmaschine<br>
-            <input class="mar" type="checkbox" name="Schlüssel" value="Schlitzmaschine"> Zange
+            <input class="mar" type="checkbox" name="Schlüssel" value="24"> 24/2 <input class="mar" type="checkbox"
+              name="Schlüssel" value="36"> 36/2 <input class="mar" type="checkbox" name="Schlüssel" value="41"> 41/2<br>
+            <input class="mar" type="checkbox" name="Schlüssel" value="verstellbarer"> verstellbarer /2<br>
+            <input class="mar" type="checkbox" name="Schlüssel" value="für Schlitzmaschine"> für Schlitzmaschine /2<br>
+            <input class="mar" type="checkbox" name="Schlüssel" value="Zange"> Zange /1
           </li>
           <li>Handschuhe <input class="mar" type="checkbox" name="Handschuhe" value="8"> 8 <input class="mar"
               type="checkbox" name="Handschuhe" value="9"> 9 </li>
@@ -122,8 +122,8 @@
       <fieldset>
         <legend>Kernbohrung</legend>
         <ol>
-          <li>KS Dübeln <input class="mar" type="checkbox" name="KS_Dübeln"></li>
-          <li>Beton Dübeln <input class="mar" type="checkbox" name="Beton_Dübeln"></li>
+          <li>KS Dübel <input class="mar" type="checkbox" name="KS_Dübeln"></li>
+          <li>Beton Dübel <input class="mar" type="checkbox" name="Beton_Dübeln"></li>
           <li>Hammer <input class="mar" type="checkbox" name="Hammer"></li>
           <li>Verlängerung für Bohrkrohnen <input class="mar" type="checkbox"
               onclick="this.form.elements['Verlängerung/Bohrkrohnen'].disabled = !this.checked"> <input class="width"
@@ -135,7 +135,9 @@
           <li>Wasserkanister <input class="mar" type="checkbox"
               onclick="this.form.elements['Wasserkanister'].disabled = !this.checked"> <input class="width"
               type="number" name="Wasserkanister" placeholder="St" disabled></li>
-          <li>Schlauch <input class="mar" type="checkbox" name="Schlauch"></li>
+          <li>Schlauch <input class="mar" type="checkbox"
+              onclick="this.form.elements['Schlauch'].disabled = !this.checked"> <input class="widthlang" type="number"
+              name="Schlauch" placeholder="Meter" disabled></li>
           <li>Schlauchkupplung <input class="mar" type="checkbox" name="Schlauchkupplung"></li>
         </ol>
       </fieldset>
@@ -192,9 +194,6 @@
 
             <input class="mar" type="checkbox" onclick="this.form.elements['Bohrer_30'].disabled = !this.checked"> 30
             <input class="width" type="number" name="Bohrer_30" placeholder="St" disabled>
-
-            <input class="mar" type="checkbox" onclick="this.form.elements['Andere_Bohrer'].disabled = !this.checked">
-            Andere <input class="width" type="text" name="Andere_Bohrer" placeholder="St" disabled>
           </li>
         </ol>
       </fieldset>

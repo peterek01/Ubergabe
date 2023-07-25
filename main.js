@@ -1,20 +1,20 @@
 const date = document.querySelector("h1 span");
 const now = new Date();
-const day = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
-const month = now.getMonth() < 10 ? "0" + now.getMonth() : now.getMonth;
-const year = now.getFullYear();
+let day = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
+let month = now.getMonth() + 1;
+let year = now.getFullYear();
 
-date.textContent = `${day}.${month}.${year}`;
+date.innerHTML = `${day}.${month}.${year}`;
 
-const btn = document.querySelector(".send");
-const select = document.querySelector("select~option");
+// const btn = document.querySelector(".send");
+// const select = document.querySelector("select~option");
 
-const sendForm = () => {
-	if (select === "wählen")
-		return alert("Wählst du einen Mitarbeiter oder ein Auto");
-};
+// const sendForm = () => {
+// 	if (select === "wählen")
+// 		return alert("Wählst du einen Mitarbeiter oder ein Auto");
+// };
 
-btn.addEventListener("submit", sendForm);
+// btn.addEventListener("submit", sendForm);
 
 // const btn = document.querySelector('.send');
 
