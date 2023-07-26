@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
@@ -61,29 +61,29 @@
           <li>Dosensenker<br>
             <input class="mar" type="checkbox" onclick="this.form.elements['DS_silber'].disabled = !this.checked">
             silber
-            <input class="width" type="number" name="DS_silber" placeholder="St" disabled> /12<br>
+            <input class="width" type="number" max="12" name="DS_silber" placeholder="St" disabled> (Soll: 12 Stück)<br>
 
             <input class="mar" type="checkbox" onclick="this.form.elements['DS_rot'].disabled = !this.checked"> rot
-            <input class="width" type="number" name="DS_rot" placeholder="St" disabled> /12<br>
+            <input class="width" type="number" max="12" name="DS_rot" placeholder="St" disabled> /12<br>
 
             <input class="mar" type="checkbox"
               onclick="this.form.elements['DS_Staubabsaugen'].disabled = !this.checked"> staubabsaugen
-            <input class="width" type="number" name="DS_Staubabsaugen" placeholder="St" disabled> /10<br>
+            <input class="width" type="number" max="10" name="DS_Staubabsaugen" placeholder="St" disabled> /10<br>
 
             <input class="mar" type="checkbox" onclick="this.form.elements['DS_nass'].disabled = !this.checked"> nass
-            <input class="width" type="number" name="DS_nass" placeholder="St" disabled> /6-10
+            <input class="width" type="number" max="10" name="DS_nass" placeholder="St" disabled> /6-10
           </li>
           <li>Adapter Hilti <input class="mar" type="checkbox"
               onclick="this.form.elements['Adapter_Hilti'].disabled = !this.checked">
-            <input class="width" type="number" name="Adapter_Hilti" placeholder="St" disabled> /2
+            <input class="width" type="number" max="2" name="Adapter_Hilti" placeholder="St" disabled> /2
           </li>
           <li>Adapter Eibenstock <input class="mar" type="checkbox"
               onclick="this.form.elements['Adapter_Eibenstock'].disabled = !this.checked">
-            <input class="width" type="number" name="Adapter_Eibenstock" placeholder="St" disabled> /2
+            <input class="width" type="number" max="2" name="Adapter_Eibenstock" placeholder="St" disabled> /2
           </li>
           <li>Schlitzscheiben <input class="mar" type="checkbox"
               onclick="this.form.elements['Schlitzscheiben'].disabled = !this.checked"> <input class="width"
-              type="number" name="Schlitzscheiben" placeholder="St" disabled> /20
+              type="number" max="20" name="Schlitzscheiben" placeholder="St" disabled> /20
           </li>
         </ol>
       </fieldset>
@@ -91,10 +91,29 @@
         <legend>Werkzeuge</legend>
         <ol>
           <li>Schlüssel <br>
-            <input class="mar" type="checkbox" name="Schlüssel" value="24"> 24/2 <input class="mar" type="checkbox"
-              name="Schlüssel" value="36"> 36/2 <input class="mar" type="checkbox" name="Schlüssel" value="41"> 41/2<br>
-            <input class="mar" type="checkbox" name="Schlüssel" value="verstellbarer"> verstellbarer /2<br>
-            <input class="mar" type="checkbox" name="Schlüssel" value="für Schlitzmaschine"> für Schlitzmaschine /2<br>
+            <input class="mar" type="checkbox" onclick="this.form.elements['Schlüssel_24'].disabled = !this.checked">
+            24
+            <input class="width" type="number" max="2" name="Schlüssel_24" placeholder="St" disabled> /2<br>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Schlüssel_36'].disabled = !this.checked">
+            36
+            <input class="width" type="number" max="2" name="Schlüssel_36" placeholder="St" disabled> /2<br>
+
+            <input class="mar" type="checkbox" onclick="this.form.elements['Schlüssel_41'].disabled = !this.checked">
+            41
+            <input class="width" type="number" max="2" name="Schlüssel_41" placeholder="St" disabled> /2<br>
+
+            <input class="mar" type="checkbox"
+              onclick="this.form.elements['Schlüssel_verstellbarer'].disabled = !this.checked">
+            verstellbarer
+            <input class="width" type="number" max="2" name="Schlüssel_verstellbarer" placeholder="St" disabled> /2<br>
+
+            <input class="mar" type="checkbox"
+              onclick="this.form.elements['Schlüssel_für Schlitzmaschine'].disabled = !this.checked">
+            für Schlitzmaschine
+            <input class="width" type="number" max="2" name="Schlüssel_für Schlitzmaschine" placeholder="St" disabled>
+            /2<br>
+
             <input class="mar" type="checkbox" name="Schlüssel" value="Zange"> Zange /1
           </li>
           <li>Handschuhe <input class="mar" type="checkbox" name="Handschuhe" value="8"> 8 <input class="mar"
