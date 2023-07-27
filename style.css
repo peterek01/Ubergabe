@@ -50,7 +50,7 @@ li {
 	min-height: 22px;
 	line-height: 22px;
 	margin-top: 10px;
-	margin-left: 4%;
+	margin-left: 6%;
 	font-size: 16px;
 }
 
@@ -129,7 +129,7 @@ fieldset {
 		right: 5%;
 	}
 	li {
-		margin-left: 5%;
+		margin-left: 7%;
 	}
 }
 
@@ -138,7 +138,7 @@ fieldset {
 		right: 6%;
 	}
 	li {
-		margin-left: 4%;
+		margin-left: 5%;
 	}
 	form {
 		max-width: 700px;
