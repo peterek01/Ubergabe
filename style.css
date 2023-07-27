@@ -117,8 +117,19 @@ fieldset {
 
 .right {
 	position: absolute;
-	/* display: inline-block; */
-	right: 4%;
+	right: 6%;
+}
+
+@media (min-width: 365px) {
+	.right {
+		right: 5%;
+	}
+}
+
+@media (min-width: 799px) {
+	.right {
+		right: 4%;
+	}
 }
 
 @media (min-width: 800px) {
