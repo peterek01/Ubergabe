@@ -10,7 +10,6 @@ h1 {
 }
 
 form {
-	position: relative;
 	width: 97vw;
 	border: 3px solid black;
 	margin: 10px auto;
@@ -47,11 +46,13 @@ input {
 }
 
 li {
-	min-height: 22px;
-	line-height: 22px;
+	position: relative;
+	list-style: none;
+	/* line-height: 22px; */
 	margin-top: 10px;
-	margin-left: 6%;
-	font-size: 16px;
+	/* left: -2%; */
+	/* margin-left: 3%; */
+	/* margin-right: 3%; */
 }
 
 li:nth-child(odd) {
@@ -120,53 +121,59 @@ fieldset {
 	right: 6%;
 }
 
-.under {
-	border-bottom: 2px solid black;
-}
-
-@media (min-width: 365px) {
+@media (max-width: 500px) {
 	.right {
-		right: 5%;
+		right: 2%;
 	}
 	li {
-		margin-left: 7%;
+		margin-left: 2%;
+		margin-right: 2%;
 	}
 }
 
-@media (min-width: 799px) {
+@media (max-width: 800px) {
 	.right {
-		right: 6%;
+		right: 2%;
 	}
 	li {
-		margin-left: 5%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.right {
+		right: 3%;
+	}
+	li {
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+	form {
+		max-width: 600px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.right {
+		right: 3%;
+	}
+	li {
+		margin-left: 3%;
+		margin-right: 3%;
 	}
 	form {
 		max-width: 700px;
 	}
 }
 
-@media (min-width: 1200px) {
-	.right {
-		right: 5%;
-	}
-	li {
-		margin-left: 4%;
-	}
-}
-
-/* @media (max-width: 680px) {
+/* @media (max-width: 1200px) {
 	li {
 		margin-left: 8%;
 	}
-}
+} */
 
-@media (max-width: 1200px) {
-	li {
-		margin-left: 8%;
-	}
-}
-
-@media (max-width: 1800px) {
+/* @media (max-width: 1800px) {
 	li {
 		margin-left: 4%;
 	}
