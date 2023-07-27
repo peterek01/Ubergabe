@@ -49,7 +49,7 @@ input {
 li {
 	min-height: 22px;
 	line-height: 22px;
-	margin: 10px;
+	margin-top: 10px;
 	margin-left: 4%;
 	font-size: 16px;
 }
@@ -120,9 +120,16 @@ fieldset {
 	right: 6%;
 }
 
+.under {
+	border-bottom: 2px solid black;
+}
+
 @media (min-width: 365px) {
 	.right {
 		right: 5%;
+	}
+	li {
+		margin-left: 5%;
 	}
 }
 
@@ -130,16 +137,37 @@ fieldset {
 	.right {
 		right: 6%;
 	}
-}
-
-@media (min-width: 800px) {
+	li {
+		margin-left: 4%;
+	}
 	form {
 		max-width: 700px;
 	}
 }
 
-@media (max-width: 680px) {
+@media (min-width: 1200px) {
+	.right {
+		right: 5%;
+	}
 	li {
-		margin-left: 6%;
+		margin-left: 4%;
 	}
 }
+
+/* @media (max-width: 680px) {
+	li {
+		margin-left: 8%;
+	}
+}
+
+@media (max-width: 1200px) {
+	li {
+		margin-left: 8%;
+	}
+}
+
+@media (max-width: 1800px) {
+	li {
+		margin-left: 4%;
+	}
+} */
