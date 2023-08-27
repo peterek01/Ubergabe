@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <form action="https://formspree.io/f/moqoayyk" method="POST">
+  <form id="myForm" action="https://formspree.io/f/moqoayyk" method="POST">
     <div class="infoDaten">
       <h1>Materialliste Bestellung vom: <span class="inventDay"></span></h1>
       <!-- <label class="person">Wer führt die Inventur durch?</label>
@@ -40,8 +40,8 @@
         <option>Yuriy</option>
       </select><br> -->
       <label class="car" for="user">Welches Auto?</label>
-      <select class="car" name="car">
-        <option disabled selected>wählen</option>
+      <select id="user" class="car" name="car">
+        <option value="" disabled selected>wählen...</option>
         <option>Blau</option>
         <option>Hellblau</option>
         <option>Kangoo</option>
@@ -85,6 +85,11 @@
           <li>Adapter Eibenstock <input class="mar" type="checkbox"
               onclick="this.form.elements['Adapter_Eibenstock'].disabled = !this.checked">
             <input class="width" type="number" max="2" name="Adapter_Eibenstock" placeholder="St" disabled>
+            <span class="right">2</span>
+          </li>
+          <li>Adapter Staubabsaugung <input class="mar" type="checkbox"
+              onclick="this.form.elements['Adapter_Staubabsaugung'].disabled = !this.checked">
+            <input class="width" type="number" max="2" name="Adapter_Staubabsaugung" placeholder="St" disabled>
             <span class="right">2</span>
           </li>
           <li>Schlitzscheiben <input class="mar" type="checkbox"

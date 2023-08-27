@@ -6,15 +6,14 @@ let year = now.getFullYear();
 
 date.innerHTML = `${day}.${month}.${year}`;
 
-// const btn = document.querySelector(".send");
-// const select = document.querySelector("select~option");
-
-// const sendForm = () => {
-// 	if (select === "wählen")
-// 		return alert("Wählst du einen Mitarbeiter oder ein Auto");
-// };
-
-// btn.addEventListener("submit", sendForm);
+document.getElementById("myForm").addEventListener("submit", function (e) {
+	const selectValue = document.getElementById("user").value;
+	if (selectValue === "") {
+		e.preventDefault();
+		alert("Bitte wählen ein Auto aus der Liste aus");
+		window.scrollTo(0, 0);
+	}
+});
 
 // const btn = document.querySelector('.send');
 
